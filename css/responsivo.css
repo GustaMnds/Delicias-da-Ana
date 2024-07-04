@@ -1,1 +1,20 @@
-@media(max-width:720px){.nome-titulo{padding:30px 0}.container{flex-direction:column;align-items:center}.button-container{width:95%;margin-bottom:10px}.scroller{width:95%;margin-bottom:10px}}
+@media(max-width: 480px){
+ .nome-titulo{
+   padding: 30px 0;
+ } 
+ .container{
+   flex-direction: column;
+   align-items: center;
+   width: 30%;
+   margin-bottom: 5px;
+ }
+ 
+ .button-container{
+   width: 30%;
+   margin-bottom: 5px;
+ }
+ .scroller{
+   width: 20%;
+   margin-bottom: 5px;
+ }
+}
