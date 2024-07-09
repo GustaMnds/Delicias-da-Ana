@@ -62,7 +62,8 @@
   
   .tag-list li {
     padding: 1rem;
-    background-color: #FA92CF;
+    height: 80px;
+    background-color: #fa92ce6d;
     border: 1px solid #000;
     border-radius: 0.5rem;
   }
