@@ -8,6 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
@@ -30,18 +33,63 @@
   </header>
   
   <section class="banner">
-    <h1>DELICIAS D<span>A ANA</span></h1>
+    <h1>Delícias da Ana</h1>
+    
+     <div class="slider" x-data="{start: true, end: false}" style="padding-top: 10px;">
+    <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
+      <div class="slider__item">
+        <img class="slider__image" src="./img/bolo-vulcao-de-cenoura.jpg" alt="Bolo Vulcao de cenoura">
+        <div class="slider__info">
+          <h2>Bolo Vulcão de Cenoura</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="./img/escondidinho-de-brownie.jpg" alt="escondidinho">
+        <div class="slider__info">
+          <h2>Escondidinho de Brownie</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="./img/biscoito-de-ninho.jpg" alt="biscoito de ninho">
+        <div class="slider__info">
+          <h2>Biscoito de Ninho</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="./img/brigadeiro-de-ninho.jpg" alt="brigadeiro de ninho">
+        <div class="slider__info">
+          <h2>Brigadeiro de Ninho</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="./img/bolo-vulcao-medio.jpg" alt="Image">
+        <div class="slider__info">
+          <h2>Bolo Vulcão Médio</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="./img/bolo-de-cenoura-brigadeiro.jpg" alt="Image">
+        <div class="slider__info">
+          <h2>Bolo de Cenoura de Brigadeiro</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="./img/copinho-de-chocolate.jpg" alt="Image">
+        <div class="slider__info">
+          <h2>Copinho de Chocolate</h2>
+        </div>
+      </div>
+    </div>
+    <div class="slider__nav" style="display: flex;justify-content: center;">
+      <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});" x-bind:class="start ? '' : 'slider__nav__button--active'">Previous</button>
+      <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});" x-bind:class="end ? '' : 'slider__nav__button--active'">Next</button>
+    </div>
+  </div>
+  
+  <h2><img class="seta"src="./img/seta.webp">RECOMENDADOS<img class="seta"src="./img/seta.webp"></h2>
   </section>
   
-  <div class="container2">
-    <ul>
-      <li>que</li>
-      <li>porra</li>
-      <li>pra</li>
-      <li>dar</li>
-      <li>trabalho</li>
-    </ul>
-  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js"></script>
   
   <script src="./js/main.js"></script>
   
