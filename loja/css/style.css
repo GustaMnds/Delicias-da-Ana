@@ -98,7 +98,6 @@ header ul li a {
   height: 100vh;
   background-image:url(../img/fundo2.jpg);
   object-fit: cover;
-  filter: brightness(60%);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
