@@ -25,11 +25,20 @@ section{
   rotate: -90deg;
 }
 
+.seta2{
+  width: 200px;
+  rotate: 90deg;
+}
+
 h2{
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.loja{
+  
 }
 
 .container2{
@@ -165,11 +174,13 @@ header ul li a {
   .slider__item {
     aspect-ratio: 0.6666666667;
     min-width: calc((100% / 2) - 2rem);
+    flex: 1 1 100%; 
  }
 }
 @media (min-width: 940px) {
   .slider__item {
     min-width: calc((100% / 3) - 4rem);
+    flex: 1 1 45%; 
  }
 }
 .slider__image {
@@ -208,6 +219,7 @@ header ul li a {
 @media (min-width: 460px) {
   .slider__nav {
     justify-content: flex-end;
+    flex: 1 1 100%; 
  }
 }
 .slider__nav__button {
@@ -235,6 +247,7 @@ header ul li a {
 @media screen and (max-width: 768px) {
   .container {
     padding: 0 2%;
+    flex: 1 1 45%; 
   }
 
   header {
@@ -250,15 +263,19 @@ header ul li a {
   }
 
   .btn-contato button {
-    width: 80px;
-    height: 30px;
+    width: 70px;
+    height: 25px;
   }
 
   .banner h1 {
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
   
   h2 .seta{
+    width: 120px;
+  }
+  
+  h2 .seta2{
     width: 120px;
   }
 }
